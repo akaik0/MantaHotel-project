@@ -1,0 +1,40 @@
+\subsection{REST API Summary}
+
+In this first part of the project we implemented the rest related to booking get methods and user get and insert methods in the traditional way, with the information to be inserted in the URI.
+We then implemented the other endpoints with parameters to be inserted in the request (this was made also for booking and user).
+Part of the URIs are filtered through different filters. M indicates that only users with the role of mamager can access to the endpoint, U indicates that only users (manager and front office members) can access the endpoint.
+
+\begin{longtable}{|p{.375\columnwidth}|p{.1\columnwidth} |p{.35\columnwidth}|p{.1\columnwidth}|}
+\hline
+\textbf{URI} & \textbf{Method} & \textbf{Description} & \textbf{Filter} \\\hline
+booking/customer-list/ & GET & Returns the list of bookings made by the customer whom personId is retrieved from the Http session & \\\hline
+booking/insert/info/ & POST & Allows to see all the available rooms in the requested time period and number of beds, and it passes the parameters needed for inserting the booking and its associated payment & \\\hline
+booking/insert/complete/ & POST & Allows to insert, in order, a payment, a booking and a staying relation between the booking, the costumer who made it and the room selected & \\\hline
+booking/add-customer/ & POST & Allows to add in the database the relationship between a booking and a guest (which is a costumer who didn't make the actual booking) & U \\\hline
+booking/search/ & GET & Returns the booking which id is passed as data & U \\\hline
+booking/list/ & GET & Returns the list of bookings made by a customer whom personId is passed as data & U \\\hline
+booking/list/date/ & GET & Returns the list of bookings with checkin or checkout dates equal to date passed as data & U \\\hline
+user/logout/ & GET & Allows to logout a user and at the same time make an insert on Log table & U \\\hline
+user/userList/ & GET & Returns a list of all the hotel users & U \\\hline
+user/login/ & POST & Allows to pass to the web server the credentials of a user and checks if the user is in the database and their mail and password correspond & U \\\hline
+user/register/ & POST &  Allows to register a new user & M \\\hline
+user/update/ & POST & Allows to modify personal user parameters passed as data & U \\\hline
+customer/logout/ & GET & Allows to logout a customer & \\\hline
+customer/login/ & POST & Allows to pass to the web server the credentials of a user and checks if the user is in the database and their mail and password correspond & \\\hline
+customer/register/ & POST & Allows to register a new customer & \\\hline
+logs/user/ & GET & Returns the login and logout timestamps related to the user and date which are passed as data & M \\\hline
+logs/day/ & GET & Returns all the login and logout timestamps of all the users, made during the current day & M \\\hline
+payment/search/ & GET & Returns the payment related to a booking which id is passed as data & U \\\hline
+payment/list/ & GET & Returns the list of payments associated to a customer whom id is passed as data & U \\\hline
+payment/edit/info/ & POST & Allows to see the information about a payment which id is passed as data, and it requests the parameters which have to be updated & U \\\hline
+payment/edit/ & POST & Allows to update a payment with the parameters passed as data & U \\\hline
+rooms/ & GET & Returns the list of all rooms & \\\hline
+room/insert/ & POST & Allows to insert a new room with the parameters passed as data & U \\\hline
+rest/booking/{bookingId} & GET & Allows to get information on a booking & \\\hline
+rest/booking/customer/{personId} & GET & Allows to get the list of all bookings associated to the customer {personid} & \\\hline
+rest/booking/date/{date} & GET & Allows to get the list of all bookings with checkin or checkout dates equal to the date {date} & \\\hline
+rest/user/ & GET & Returns the list of all hotel users & \\\hline
+rest/user/ & POST & Allows to insert a new user & \\\hline
+
+\label{tab:termGlossary}
+\end{longtable}

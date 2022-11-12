@@ -1,0 +1,45 @@
+\section{Presentation Logic Layer}
+The site will be divided into two main areas, administration area and customer area, as follows:
+\begin{itemize}
+    \item \textbf{Administration area}: allows the staff member (front office users and manager) to have an overview of the hotel information.
+    	\begin{itemize}
+    			 \item \textbf{Front office users}: 
+    			 \begin{itemize}
+    			 	\item can add a new booking;
+					\item can see only currently booking and sooner booking, grouped by rooms;
+    			 \end{itemize}
+    			 \item \textbf{Manager}: 
+				\begin{itemize}
+					\item can add a new booking;
+					\item can see past booking (download a log), currently booking and sooner booking, grouped by rooms;
+					\item can view payment status of the booking (pending list and confirmed list) and the payments methods of customers;
+					\item can manage the front office users (create one, edit information, delete one, send reset password link);
+					\item can view the information about front office users (like the last access);
+				\end{itemize}    			 
+    	\end{itemize}
+    \item \textbf{Customers area}
+    \begin{itemize}
+	    \item \textbf{Homepage}: contains general information about the hotel, pictures and short descriptions about the different types of rooms and activities. Including a link to the login/registration page;
+	    \item \textbf{Log in page}: allows customers, manager and front office users, to login into the web application;
+	    \item \textbf{Registration page}: allows registration of customers user;
+	    \item \textbf{Personal profile}: allows the customer to check its personal information, manage its booking - with two different buttons, one for starting a new booking procedure, and the other one for deleting a previous booking -, and choose the payment methods; 
+	    \item \textbf{Booking page}: allows the customer to book a room for one or more guests, select the type of room and add some requests;
+    \end{itemize}
+  
+\end{itemize}
+\pagebreak
+%For the main pages put a draft and describe it in detail.
+\subsection{Administration Area}
+Front office users and manager have a common administration interface, with the difference that some links and some buttons can only be used by the manager and not by the front office users, who will not be allowed to access via a message "access denied" error.
+\input{sections/PLL/ManagerPage}
+\input{sections/PLL/Frontoffice}
+
+\subsection{Customers Area}
+The pages that make up the customer area are now described. 
+\par \noindent A guest user can do with the booking procedure, but to complete it, a registration is required. 
+\input{sections/PLL/homepage}
+\input{sections/PLL/Bookingpage}
+\pagebreak
+\input{sections/PLL/Loginpage}
+\input{sections/PLL/Personalpage}
+

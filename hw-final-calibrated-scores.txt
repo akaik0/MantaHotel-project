@@ -1,0 +1,15 @@
+###############
+Group: manta
+Overall score: 20
+
+Calibrated individual scores:
+- andreas roennestad: 17
+- arina kosiakov: 20
+- giada zuccolo: 20
+- julie marie heldal: 20
+- kathrine hermansen: 20
+- marco vignaga: 21
+- mohammadreza mohammadi: 20
+- nadezhda manuilova: 19
+- tommaso lotta: 21
+###############

@@ -1,0 +1,22 @@
+"SCORE: 9.75
+
+
+COMMENTS ABOUT THE HOMEWORK:
+
+– Maven and compilation are OK
+– Javadoc on classes missing
+- Clear objectives and functionalities
+- Good ER schema (even if not sure to understand what the Log entity is)
+- Very well done mock-ups
+- Class diagram and sequence diagram OK
+- REST API and its documentation OK
+- Good use of Filter for authentication and for distinguishing among user roles
+- Good use of JSON Web Token and Mail
+- Good organization of the java code
+- Good to have a README.md
+
+
+CONTRIBUTION TO THE HOMEWORK:
+
+- Roy Ricaldi neither is listed among the authors of the homework nor has commits in the git repository. No contribution corresponds to withdrawing from the course.
+- Good and regular contributions by other team members but contribution of Arina Kosiakov must not be limited to report writing / mock ups and must concern also actual code writing"

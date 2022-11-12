@@ -1,0 +1,48 @@
+\subsection{REST API Details}
+
+%List here a few resources retrievable via REST API
+
+\subsubsection*{User Resource}
+
+% the description of the resource
+
+This endpoint allows to insert a User or get list of all users, in this case we present only the inserting operation.
+
+\begin{itemize}
+    \item URL: \texttt{http://localhost:8080/MantaWA-HW1-1.0/rest/user/}
+    \item Method: \texttt{POST}
+    \item URL Parameters: None
+    \item Data Parameters: 
+    \begin{itemize}
+     \item firstname: text
+     \item lastname: text
+     \item email: text
+     \item role: text
+     \item password: text
+    \end{itemize}
+    \item Success Response: 
+     \begin{itemize}
+     \item \{
+    "message": \{
+        "message": "Success",
+        "code": "200",
+        "details": "User inserted successfully"
+    \}
+\}
+    \end{itemize}
+    \item Error Response:
+    \begin{itemize}
+    \item 
+    \{
+    \{
+    "message": \{
+        "message": "Duplicate User",
+        "code": "110",
+        "details": "User already exist"
+    \}
+\}
+    \end{itemize}
+    
+\end{itemize}
+
+

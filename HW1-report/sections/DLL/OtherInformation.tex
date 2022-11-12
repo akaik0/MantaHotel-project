@@ -1,0 +1,8 @@
+\subsection{Other Information}
+For the creation of the database 3 custom enumerations have been created: 
+roletype, associated to the roles of hotel users (Hotel Manager or Front Office); 
+paymentmethod, which contains the possible ways to pay the staying (Visa, MasterCard, Cash ...); 
+category, containing a value for each type of room (Single, Double ...).
+Customers are supposed to group people that make the bookings or people that stay in the hotel and also people that do both. 
+This is the reason why some attributes can be null, for example the email is usually required for a booking but not for a staying and opposite for the document number.
+Log is the only entity with which it is not possible to interact since it is automatically filled.

@@ -1,0 +1,43 @@
+
+table{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 40px 0 rgb(0 0 0 / 15%);
+    -moz-box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 0 40px 0 rgb(0 0 0 / 15%);
+    position: relative;
+    padding-top: 60px;
+    background-color: #fff;
+    border-collapse: collapse;
+    margin: 1em;
+}
+
+th {
+    color: #800000;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+td {
+    color: #3a3a3a;
+    font-weight: 400;
+    padding: 0.65em 1em;
+}
+.disabled td {
+    color: #4F5F64;
+}
+tbody tr {
+    transition: background 0.25s ease;
+}
+tbody tr:hover {
+    background: #f1f1f1;
+}
+
+#bookingId, #customerId, #date{
+    width: 55%;
+}
+
+span{
+    width: 100%;
+}

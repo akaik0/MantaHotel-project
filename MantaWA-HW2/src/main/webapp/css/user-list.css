@@ -1,0 +1,41 @@
+h1 {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 1.875rem!important; ;
+    color: #7A2826;
+}
+
+h3 {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    color: #7A2826;
+}
+
+button[type=submit] {
+    font-family:  inherit;
+    font-size:  inherit;
+    width: 100%;
+    padding:  10px;
+    background-color: #7A2826;
+    color: white;
+    border: 0;
+}
+
+button[type=submit]:hover {
+    background-color: #965452;
+}
+
+.resetButton{
+    background-color: #343a40 !important;
+}
+
+.center-inputs{
+    margin: auto;
+}
+
+.header-margin{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nav-pad {
+    padding-top: 8px;
+}

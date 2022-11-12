@@ -1,0 +1,37 @@
+\subsection{REST Error Codes}
+
+%If needed, add few lines of text, describing the error codes table
+The following list contains the different possible errors which can occure by using the application. In particular, application specific errors have the application error which follows a progressive numeration starting from -100. 
+METHOD NOT ALLOWED errors are identified with the error code -500.
+Internal errors, which correspond to crashes, servlet exceptions, or problems with the input/output streams are identified with the Error Code -999.
+
+\begin{longtable}{|p{.15\columnwidth}|p{.2\columnwidth} |p{.6\columnwidth}|} 
+\hline
+\textbf{Error Code} & \textbf{HTTP Status Code} & \textbf{Description} \\\hline
+-100 & BAD\_REQUEST            & Wrong Person id format. \\ \hline
+-101 & NOT\_FOUND              & The user is looking for a room which is not present. \\ \hline
+-102 & BAD\_REQUEST            & The user tried to register without specifying all the details. Used also with forms that need to be fully filled. \\ \hline
+-103 & BAD\_REQUEST            & The user tried to login without specifying the Email. \\ \hline
+-104 & BAD\_REQUEST            & The user tried to login without specifying the password. \\ \hline
+-105 & BAD\_REQUEST            & User submitted wrong credentials in the login form. \\ \hline
+-106 & NOT\_FOUND              & User to be deleted not found. \\ \hline
+-107 & BAD\_REQUEST            & Different passwords when repeating the password in the registration phase. \\ \hline
+-108 & CONFLICT                & Mail already used for another registration. \\ \hline
+-109 & BAD\_REQUEST            & Unrecognized role. \\ \hline
+-110 & CONFLICT                & User is already present. \\ \hline
+-111 & BAD\_REQUEST            & Invalid document number. \\ \hline
+-112 & BAD\_REQUEST            & Wrong rest request format. \\ \hline
+-113 & NOT\_FOUND              & Costumer not found. \\ \hline
+-114 & CONFLICT                & Person ID requested and Person ID provided do not match. \\ \hline
+-115 & NOT\_FOUND              & User not found. \\ \hline
+-116 & BAD\_REQUEST            & Person ID is missing. \\ \hline
+-117 & NOT\_FOUND              & Booking not found. \\ \hline
+-118 & BAD\_REQUEST            & Date is missing. \\ \hline
+-119 & BAD\_REQUEST            & The input json is in the wrong format. \\ \hline
+-200 & BAD\_REQUEST            & Operation unknown. \\ \hline
+-500 & METHOD\_NOT\_ALLOWED    & The method is not allowed. \\ \hline
+-999 & INTERNAL\_SERVER\_ERROR & There was an internal error that the server was not able to manage. \\ \hline
+
+\caption{Describe in this table your REST API}
+\label{tab:termGlossary}
+\end{longtable}
