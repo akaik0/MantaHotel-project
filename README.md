@@ -8,7 +8,7 @@ The technologies used are HTML5, CSS, Javascript, Java servlet, SQL
 
 ### How do I get set up? ###
 
-To view the site it is necessary to download apache tomcat and set your credentials.
-Afterwards it is needed to run Tomcat and go to the localhost:8080 
-The next step is to deploy the application by uploading the war file
-Click start button and the webpage will appear
+*To view the site it is necessary to download apache tomcat and set your credentials.
+*Afterwards it is needed to run Tomcat and go to the localhost:8080 
+*The next step is to deploy the application by uploading the war file
+*Click start button and the webpage will appear
