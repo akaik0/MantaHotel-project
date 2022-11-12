@@ -1,9 +1,7 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-This is a project made during my Master's degree studies for the Web Application course. This project was about creating a web application, in this case for a hotel, starting from the database.
+### WEB SITE FOR MANTA HOTEL ###
+This is a project made during my Master's degree studies for the Web Application course. This project was about creating a web application, in this case for a hotel, taking care of the backend and frontend.
 The technologies used are HTML5, CSS, Javascript, Java servlet, SQL
 
 ### How do I get set up? ###
