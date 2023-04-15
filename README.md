@@ -10,3 +10,5 @@ The technologies used are HTML5, CSS, Javascript, Java servlet, SQL
 *Afterwards it is needed to run Tomcat and go to the localhost:8080 
 *The next step is to deploy the application by uploading the war file
 *Click start button and the webpage will appear
+
+It is possible to know more about this project from the MantaHotel-Presentation.pdf file.
